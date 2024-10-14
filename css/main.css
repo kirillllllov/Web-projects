@@ -1,57 +1,34 @@
-* {
+*{
     font-family: 'Roboto', sans-serif;
-    color: #E0E0E0;
-
+    color: #ffffff;
 }
-
-.nav {
-    background-color: #0b1d57;
-    color: white;
-    text-align: center;
-    padding: 5pt;
-
-
-}
-
 body {
     margin: 0pt;
 
 }
-
-h1 {
-    font-size: 2em
+.nav {
+    background-color: #0b1d57;
+    color: #ffffff;
+    text-align: center;
+    padding: 5pt;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
-
-h2 {
-    font-size: 1.5em
-}
-
-h3 {
-    font-size: 1em
-}
-
 header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
-.text * {
+.text *{
     margin-left: 10px;
-    color: #333333
+    color: #333333;
 }
-
-main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-}
-
 .module {
     background-color: #0b1d57;
     border-radius: 15pt;
-    color: #E0E0E0;
+    color: #ffffff;
     flex-grow: 1;
     display: flex;
     justify-content: flex-start;
@@ -64,22 +41,73 @@ div.logo {
     flex-basis: 200px;
     margin: 20px;
 }
-
 @media screen and (max-width: 1024px) {
     .logo {
         display: none !important;
     }
 }
 
-@media screen and (max-width: 360px) {
-    * {
-        display: none !important;
-    }
-}
-footer{
+footer *{
     display: flex;
     flex-direction: column;
     color: #333333;
     text-align: center;
+    align-items: center;
     margin: 10px;
+}
+.collegium {
+    display: flex;
+    align-items: center;
+    margin-left: 0px;
+}
+.collegium img {
+    border-radius: 15px;
+    margin-right: 20px;
+    width: 130px;
+}
+.collegium span{
+    font-size: 18px;
+}
+a {
+    color:  #ffffff;
+    transition: color 0.5s ease;
+}
+a:hover {
+    color: #0000ff;
+}
+footer a {
+    color:  #000000;
+    transition: color 0.5s ease;
+}
+footer a:hover {
+    color: #0000ff;
+}
+.learn-work-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.learn-work-container .module {
+    flex: 1;
+}
+.apply-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.apply-button {
+    background-color: #0b1d57;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.apply-button:hover {
+    background-color: #ffffff;
 }
