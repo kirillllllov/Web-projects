@@ -59,6 +59,7 @@ footer *{
     display: flex;
     align-items: center;
     margin-left: 0px;
+    flex-wrap: wrap;
 }
 .collegium img {
     border-radius: 15px;
